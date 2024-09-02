@@ -1,0 +1,26 @@
+html[data-theme="solarized-dark"] {
+  --bg-color: #002b36;
+  --content-bg-color: #073642;
+  --content-border-color: #094a5b;
+  --text-color: #839496;
+  --comment-text-color: #839496;
+  --link-color: #268bd2;
+  --visited-color: #6c71c4;
+  --header-bg-color: #094a5b;
+  --header-text-color: #fdf6e3;
+  --toptext-color: #839496;
+  --subtext-color: #586e75;
+  --titleline-color: #268bd2;
+  --titleline-visited-color: #6c71c4;
+  --comment-border-color: #094a5b;
+  --comment-highlight-color: #084150;
+  --input-bg-color: #002b36;
+  --input-text-color: #839496;
+  --input-border-color: #586e75;
+  --code-bg-color: #073642;
+  --code-text-color: #839496;
+  --font-size-base: 14px;
+  --font-size-title: 16px;
+  --font-size-subtext: 12px;
+  --font-size-comment: 14px;
+}

@@ -1,0 +1,26 @@
+html[data-theme="solarized-light"] {
+  --bg-color: #fdf6e3;
+  --content-bg-color: #eee8d5;
+  --content-border-color: #d3cbb7;
+  --text-color: #657b83;
+  --comment-text-color: #657b83;
+  --link-color: #268bd2;
+  --visited-color: #6c71c4;
+  --header-bg-color: #073642;
+  --header-text-color: #fdf6e3;
+  --toptext-color: #657b83;
+  --subtext-color: #93a1a1;
+  --titleline-color: #268bd2;
+  --titleline-visited-color: #6c71c4;
+  --comment-border-color: #d3cbb7;
+  --comment-highlight-color: #e4ddc9;
+  --input-bg-color: #fdf6e3;
+  --input-text-color: #657b83;
+  --input-border-color: #93a1a1;
+  --code-bg-color: #eee8d5;
+  --code-text-color: #657b83;
+  --font-size-base: 15px;
+  --font-size-title: 17px;
+  --font-size-subtext: 13px;
+  --font-size-comment: 15px;
+}

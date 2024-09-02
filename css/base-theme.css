@@ -1,0 +1,108 @@
+/* Base theme structure */
+html[data-theme]:not([data-theme="default"]) {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+}
+
+html[data-theme]:not([data-theme="default"]) body {
+  color: var(--text-color);
+}
+
+html[data-theme]:not([data-theme="default"]) #hnmain {
+  background-color: var(--content-bg-color);
+  border-color: var(--content-border-color);
+}
+
+html[data-theme]:not([data-theme="default"]) a:link {
+  color: var(--link-color);
+}
+
+html[data-theme]:not([data-theme="default"]) a:visited {
+  color: var(--visited-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .title {
+  font-size: var(--font-size-title);
+}
+
+html[data-theme]:not([data-theme="default"]) .title a {
+  color: var(--titleline-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .title a:visited {
+  color: var(--titleline-visited-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .subtext,
+html[data-theme]:not([data-theme="default"]) .comhead,
+html[data-theme]:not([data-theme="default"]) .hnuser,
+html[data-theme]:not([data-theme="default"]) .age,
+html[data-theme]:not([data-theme="default"]) .hnpast {
+  color: var(--subtext-color);
+  font-size: var(--font-size-subtext);
+}
+
+html[data-theme]:not([data-theme="default"]) .comment,
+html[data-theme]:not([data-theme="default"]) .commtext,
+html[data-theme]:not([data-theme="default"]) .comment-tree .comtr {
+  font-size: var(--font-size-comment);
+  color: var(--comment-text-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .comment-tree .comtr {
+  border-top: 1px solid var(--comment-border-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .comment-tree .comtr.highlight {
+  background-color: var(--comment-highlight-color);
+}
+
+html[data-theme]:not([data-theme="default"]) .pagetop,
+html[data-theme]:not([data-theme="default"]) .toptext,
+html[data-theme]:not([data-theme="default"]) .pagetop a,
+html[data-theme]:not([data-theme="default"]) .toptext a {
+  color: var(--header-text-color) !important;
+}
+
+html[data-theme]:not([data-theme="default"]) .toptext {
+  color: var(--toptext-color) !important;
+}
+
+html[data-theme]:not([data-theme="default"]) td[bgcolor="#ff6600"] {
+  background-color: var(--header-bg-color) !important;
+}
+
+html[data-theme]:not([data-theme="default"]) .pagetop a:hover,
+html[data-theme]:not([data-theme="default"]) .toptext a:hover {
+  text-decoration: underline;
+}
+
+html[data-theme]:not([data-theme="default"]) td[bgcolor="#ff6600"] {
+  background-color: var(--header-bg-color) !important;
+}
+html[data-theme]:not([data-theme="default"]) td[bgcolor="#ff6600"] {
+  background-color: var(--header-bg-color) !important;
+}
+
+html[data-theme]:not([data-theme="default"]) input,
+html[data-theme]:not([data-theme="default"]) textarea {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  border: 1px solid var(--input-border-color);
+  font-size: var(--font-size-base);
+}
+
+html[data-theme]:not([data-theme="default"]) pre,
+html[data-theme]:not([data-theme="default"]) code {
+  background-color: var(--code-bg-color);
+  color: var(--code-text-color);
+  border: 1px solid var(--comment-border-color);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Ensure smooth transitions when changing themes */
+html[data-theme]:not([data-theme="default"]) * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

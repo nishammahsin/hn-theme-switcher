@@ -1,0 +1,26 @@
+html[data-theme="midnight-blue"] {
+    --bg-color: #0f1e3a;
+    --content-bg-color: #1a2b4a;
+    --content-border-color: #2a3b5a;
+    --text-color: #e0e0e0;
+    --comment-text-color: #d0d0d0;
+    --link-color: #64b5f6;
+    --visited-color: #9575cd;
+    --header-bg-color: #283593;
+    --header-text-color: #ffffff;
+    --toptext-color: #d0d0d0;
+    --subtext-color: #b0bec5;
+    --titleline-color: #64b5f6;
+    --titleline-visited-color: #9575cd;
+    --comment-border-color: #2a3b5a;
+    --comment-highlight-color: #223352;
+    --input-bg-color: #1a2b4a;
+    --input-text-color: #e0e0e0;
+    --input-border-color: #3f51b5;
+    --code-bg-color: #1a2b4a;
+    --code-text-color: #e0e0e0;
+    --font-size-base: 14px;
+    --font-size-title: 16px;
+    --font-size-subtext: 12px;
+    --font-size-comment: 14px;
+  }

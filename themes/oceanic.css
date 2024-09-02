@@ -1,0 +1,26 @@
+html[data-theme="oceanic"] {
+  --bg-color: #1b2b34;
+  --content-bg-color: #243540;
+  --content-border-color: #3a5060;
+  --text-color: #c0c5ce;
+  --comment-text-color: #c0c5ce;
+  --link-color: #6699cc;
+  --visited-color: #5fb3b3;
+  --header-bg-color: #4f5b66;
+  --header-text-color: #d8dee9;
+  --toptext-color: #c0c5ce;
+  --subtext-color: #65737e;
+  --titleline-color: #6699cc;
+  --titleline-visited-color: #5fb3b3;
+  --comment-border-color: #3a5060;
+  --comment-highlight-color: #2c3e4a;
+  --input-bg-color: #1b2b34;
+  --input-text-color: #c0c5ce;
+  --input-border-color: #65737e;
+  --code-bg-color: #243540;
+  --code-text-color: #c0c5ce;
+  --font-size-base: 15px;
+  --font-size-title: 17px;
+  --font-size-subtext: 13px;
+  --font-size-comment: 15px;
+}

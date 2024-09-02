@@ -1,0 +1,26 @@
+html[data-theme="forest-green"] {
+    --bg-color: #1b3a24;
+    --content-bg-color: #2a4a33;
+    --content-border-color: #3a5a43;
+    --text-color: #e0e0e0;
+    --comment-text-color: #d0d0d0;
+    --link-color: #81c784;
+    --visited-color: #a5d6a7;
+    --header-bg-color: #2e7d32;
+    --header-text-color: #ffffff;
+    --toptext-color: #d0d0d0;
+    --subtext-color: #c8e6c9;
+    --titleline-color: #81c784;
+    --titleline-visited-color: #a5d6a7;
+    --comment-border-color: #3a5a43;
+    --comment-highlight-color: #32523c;
+    --input-bg-color: #2a4a33;
+    --input-text-color: #e0e0e0;
+    --input-border-color: #4caf50;
+    --code-bg-color: #2a4a33;
+    --code-text-color: #e0e0e0;
+    --font-size-base: 14px;
+    --font-size-title: 16px;
+    --font-size-subtext: 12px;
+    --font-size-comment: 14px;
+  }

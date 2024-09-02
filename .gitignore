@@ -1,0 +1,19 @@
+# .gitignore
+
+# Ignore node_modules if you're using npm
+node_modules/
+
+# Ignore any log files
+*.log
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore any built extensions or zip files
+*.crx
+*.pem
+*.zip
+
+# Ignore any temporary files
+*.tmp
+*.swp

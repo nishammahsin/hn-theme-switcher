@@ -1,0 +1,26 @@
+html[data-theme="monokai"] {
+    --bg-color: #272822;
+    --content-bg-color: #2d2e27;
+    --content-border-color: #3e3f32;
+    --text-color: #f8f8f2;
+    --comment-text-color: #f8f8f2;
+    --link-color: #a6e22e;
+    --visited-color: #ae81ff;
+    --header-bg-color: #44475a;
+    --header-text-color: #f8f8f2;
+    --toptext-color: #f8f8f2;
+    --subtext-color: #75715e;
+    --titleline-color: #e6db74;
+    --titleline-visited-color: #fd971f;
+    --comment-border-color: #49483e;
+    --comment-highlight-color: #3e3d32;
+    --input-bg-color: #3c3d37;
+    --input-text-color: #f8f8f2;
+    --input-border-color: #75715e;
+    --code-bg-color: #3c3d37;
+    --code-text-color: #f8f8f2;
+    --font-size-base: 14px;
+    --font-size-title: 16px;
+    --font-size-subtext: 12px;
+    --font-size-comment: 14px;
+  }
