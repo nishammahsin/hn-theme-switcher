@@ -106,3 +106,12 @@ html[data-theme]:not([data-theme="default"]) code {
 html[data-theme]:not([data-theme="default"]) * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+html[data-theme]:not([data-theme="default"]) .pagetop svg {
+  stroke: var(--header-text-color);
+  vertical-align: middle;
+}
+
+html[data-theme]:not([data-theme="default"]) .pagetop a:hover svg {
+  opacity: 0.8;
+}

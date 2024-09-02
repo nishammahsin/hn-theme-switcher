@@ -9,7 +9,6 @@ function createThemeDropdown() {
   dropdown.style.marginLeft = '10px';
 
   // Add options to the dropdown
-  const themes = ['default', 'dark', 'solarized-light', 'solarized-dark', 'oceanic', 'midnight-blue', 'forest-green', 'sepia', 'monokai'];
   THEMES.forEach(theme => {
     const option = document.createElement('option');
     option.value = theme;
@@ -18,22 +17,34 @@ function createThemeDropdown() {
   });
 
   // Add event listener for theme change
-  dropdown.addEventListener('change', function() {
+  dropdown.addEventListener('change', function () {
     if (isEnabled) {
       applyTheme(this.value);
-      chrome.storage.sync.set({'theme': this.value});
+      chrome.storage.sync.set({ 'theme': this.value });
     }
   });
-
-  // Insert the dropdown in the header
+  // Create GitHub icon
+  const githubLink = document.createElement('a');
+  githubLink.href = 'https://github.com/nishammahsin/hn-theme-switcher/blob/main/CONTRIBUTING.md';
+  githubLink.target = '_blank';
+  githubLink.style.marginLeft = '10px';
+  githubLink.style.verticalAlign = 'middle';
+  githubLink.innerHTML = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+  </svg>
+  <span>Source</span>
+`;
+  // Insert the dropdown and GitHub icon after the "new" link in the header
   const topbar = document.querySelector('.pagetop');
   if (topbar) {
     console.log('Found .pagetop element');
     const span = document.createElement('span');
     span.appendChild(document.createTextNode(' | '));
     span.appendChild(dropdown);
+    span.appendChild(githubLink);
     topbar.appendChild(span);
-    console.log('Inserted dropdown into .pagetop');
+    console.log('Inserted dropdown and GitHub icon into .pagetop');
   } else {
     console.error('Could not find .pagetop element');
   }
@@ -41,7 +52,7 @@ function createThemeDropdown() {
 
 function applyTheme(theme) {
   if (!isEnabled) return;
-  
+
   console.log(`Applying theme: ${theme}`);
 
   // Remove any previously injected style tags
@@ -98,12 +109,12 @@ function applyTheme(theme) {
 }
 
 // Create and inject the dropdown when the page loads
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   console.log('Window loaded, creating dropdown');
   createThemeDropdown();
 
   // Load and apply the saved theme
-  chrome.storage.sync.get(['theme', 'enabled'], function(data) {
+  chrome.storage.sync.get(['theme', 'enabled'], function (data) {
     console.log('Retrieved from storage:', data);
     isEnabled = data.enabled !== false;
     if (data.theme && isEnabled) {
@@ -113,11 +124,11 @@ window.addEventListener('load', function() {
 });
 
 // Listen for enable/disable messages
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   console.log('Received message:', request);
   if (request.action === "enable") {
     isEnabled = true;
-    chrome.storage.sync.get('theme', function(data) {
+    chrome.storage.sync.get('theme', function (data) {
       if (data.theme) {
         applyTheme(data.theme);
       }
