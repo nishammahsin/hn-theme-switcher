@@ -10,9 +10,9 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## We Develop with Github
 
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+We use GitHub to host code, to track issues and feature requests, as well as accept pull requests.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+## Pull Requests
 
 Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests:
 
@@ -27,9 +27,9 @@ Pull requests are the best way to propose changes to the codebase. We actively w
 
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project.
 
-## Report bugs using Github's [issues](https://github.com/yourusername/hn-theme-switcher/issues)
+## Report bugs using Github's [issues](https://github.com/nishammahsin/hn-theme-switcher/issues)
 
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/yourusername/hn-theme-switcher/issues/new); it's that easy!
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/nishammahsin/hn-theme-switcher/issues/new); it's that easy!
 
 ## Creating a New Theme
 
@@ -69,11 +69,16 @@ To create a new theme:
    ```
 
 3. Replace `my-awesome-theme` with your theme's name and set appropriate color values.
-4. Add your new theme to the `THEMES` array in `js/constants.js`:
-   - Open `js/constants.js`
-   - Find the `THEMES` array
-   - Add your new theme name to this array (e.g., `'my-awesome-theme'`)
-5. Test your theme thoroughly by loading the extension and selecting your new theme.
+4. Add your new theme to the `THEMES` array in `js/constants.js`.
+5. Test your theme thoroughly.
 6. Submit a pull request with your new theme file and the updated `constants.js`.
 
-Note: Adding a new theme requires updating the `constants.js` file to include the theme in the list. This ensures that your new theme appears in the dropdown menu and can be selected by users.
+## License
+
+By contributing, you agree that your contributions will be licensed under its MIT License.
+
+## Questions or Suggestions?
+
+Feel free to [open an issue](https://github.com/nishammahsin/hn-theme-switcher/issues/new) with the tag "question" or "suggestion".
+
+Thank you for contributing to the Hacker News Theme Switcher!
