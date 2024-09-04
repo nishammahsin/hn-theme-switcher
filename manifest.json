@@ -1,10 +1,12 @@
 {
-  "manifest_version": 2,
-  "name": "Hacker News Theme Switcher",
+  "manifest_version": 3,
+  "name": "Hacker News Theme Switcher (Open Source)",
   "version": "1.0",
   "description": "Change themes for Hacker News",
   "permissions": [
-    "storage",
+    "storage"
+  ],
+  "host_permissions": [
     "https://news.ycombinator.com/*"
   ],
   "content_scripts": [
@@ -15,12 +17,13 @@
     }
   ],
   "background": {
-    "scripts": ["js/background.js"],
-    "persistent": false
+    "service_worker": "js/background.js"
   },
   "web_accessible_resources": [
-    "themes/*.css",
-    "css/base-theme.css"
+    {
+      "resources": ["themes/*.css", "css/base-theme.css"],
+      "matches": ["https://news.ycombinator.com/*"]
+    }
   ],
   "icons": {
     "16": "icons/icon16.png",
@@ -28,7 +31,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
