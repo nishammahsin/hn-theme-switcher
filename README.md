@@ -1,7 +1,8 @@
 # Hacker News Theme Switcher
+[Link to the extension](https://chromewebstore.google.com/detail/hacker-news-theme-switche/bbiejkgfielpdondglbinhpljelddkeg?authuser=0&hl=en)
 
 A Chrome extension that allows users to customize the appearance of Hacker News with various themes.
-
+https://chromewebstore.google.com/detail/hacker-news-theme-switche/bbiejkgfielpdondglbinhpljelddkeg?authuser=0&hl=en
 ## Features
 
 - Multiple themes including Dark, Solarized Light, Solarized Dark, Oceanic, Monokai, Midnight Blue, Forest Green, and Sepia
