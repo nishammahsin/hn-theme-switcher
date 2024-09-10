@@ -1,5 +1,9 @@
-# Hacker News Theme Switcher
 [Link to the extension](https://chromewebstore.google.com/detail/hacker-news-theme-switche/bbiejkgfielpdondglbinhpljelddkeg?authuser=0&hl=en)
+
+![1](https://github.com/user-attachments/assets/2245b96e-bd86-408b-b114-6a5140334978)# Hacker News Theme Switcher
+
+![2](https://github.com/user-attachments/assets/ead466b9-2cdf-43a5-b311-bb43e2c0f54c)
+
 
 A Chrome extension that allows users to customize the appearance of Hacker News with various themes.
 https://chromewebstore.google.com/detail/hacker-news-theme-switche/bbiejkgfielpdondglbinhpljelddkeg?authuser=0&hl=en
